@@ -7,11 +7,48 @@
     <body>
         
             <div class="me">
-                <img src="" class="logo">
-                <p>TODO LIST</p>
-                <button class="btn"><img src="">Bookings</button>
+                <div class="logo"> 
+                    <p id="currentDate"></p>
+                    <p>3 Active tasks</p>
+                </div>
+                
+                <p class="heading">TO DO LIST</p>
+                <button class="btn"><img src="icons8-setting-50.png"></button>
             </div>
-
-
+            <div class="inputbar">
+                <input type="text" >
+                <button>ADD</button>
+            </div>
+            <div class="container">
+                <div class="list">
+                  <span class="todoname">ADD NAV BAR</span>
+                  <button class="delete-icon"><img class="spanimage" src="icons8-delete-30.png" alt="Image"></button>
+                  <button class="edit-icon"><img class="spanimage" src="icons8-edit-24.png" alt="Image"></button>
+                </div>
+                <div class="list">
+                  <span class="todoname">Deploy app and then get into 
+                    meeting with team
+                  </span>
+                  <button class="delete-icon"><img class="spanimage" src="icons8-delete-30.png" alt="Image"></button>
+                  <button class="edit-icon"><img class="spanimage" src="icons8-edit-24.png" alt="Image"></button>
+                </div>
+                <div class="list">
+                  <span class="todoname">Go pick up pizza tonight</span>
+                  <button class="delete-icon"><img class="spanimage" src="icons8-delete-30.png" alt="Image"></button>
+                  <button class="edit-icon"><img class="spanimage" src="icons8-edit-24.png" alt="Image"></button>
+                </div>
+              </div>
+              <script>
+                // Get the current date
+                const currentDate = new Date();
+                
+                // Format the date as "Day, Month Date, Year"
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                const formattedDate = currentDate.toLocaleDateString('en-US', options);
+                
+                // Display the current date in the paragraph element
+                document.getElementById('currentDate').textContent = formattedDate;
+                </script>
+              
     </body>
 </html>

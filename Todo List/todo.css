@@ -3,6 +3,7 @@
     padding: 0;
     font-family: "poppins", sans-serif;
     box-sizing: border-box;
+    background-color:#172a3a ;
 }
 
 .me{
@@ -11,11 +12,25 @@
     align-items: center;
     justify-content:space-between;
     padding: 10px 0;
-    background-color: #16f529;
+    background-color:#172a3a;
+    box-shadow: 4px 4px 4px  rgb(9, 24, 29);
+}
+.heading{
+    color: #51e5ff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700px;
+    font-size: 50px;
 }
 .logo{
-    width: 70px;
+    width: 120px;
     cursor: pointer;
+    margin-left: 10px;
+}
+.logo p{
+    color:#51e5ff ;
+    font-size: large;
+    margin-top: 2px;
+    margin-left: 7px;
 }
 
 .btn{
@@ -25,50 +40,92 @@
     border: 0;
     outline: 0;
     border-radius: 5px;
-    background: #f5168d;
-    color: #fff;
     font-weight: 500;
     cursor: pointer;
 }
 .btn img{
-    width: 20px;
+    width: auto;
+    height: auto;
     margin-right: 10px;
 }
-.content{
+.inputbar{
+    margin-left: 400px;
     margin-top: 100px;
-    color: #fff;
-    max-width: 400px;
+    
 
 }
-.content h1{
-    font-size: 30px;
-    font-weight: 200px;
-    line-height: 30px;
-    margin-bottom: 30px;
+.inputbar input{
+    background-color: #51e5ff;
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
 }
-.content form{
+.inputbar button{
+    background-color: #51e5ff;
+    height: 50px; 
+    width: 60px;
+    color: #172a3a;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: large;
+}
+.container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    background: white;
-    border-radius: 5px;
+    width: 600px;
+    height: 300px;
+    background-color:#172a3a ;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 350px;
+    border: 2px solid #51e5ff;
+    border-radius: 20px;
+    
+  }
+  
+  .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+    height: 100px;
     padding: 10px;
-    margin-top: 30px;
-}
-.content form input{
-    border: 0;
-    outline: 0;
-    width: 100%;
-    font-size: 16px;
-    padding-left: 10px;
-}
-.content form .btn{
-    font-size: 15px;
-    padding: 10px 30px;
-    transition: background-color 1s;
-}
-.content form .btn:hover{
-    background-color: green;
-}
-.content form .btn:active{
-    background-color: red;
-}
+    border-bottom: 2px solid #51e5ff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 5px;
+    margin-top: 4px;
+
+  }
+  .todoname{
+    width: 400px;
+    height: 50px;
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .delete-icon {
+    cursor: pointer;
+    width: 70px;
+    height: 50px;
+    border: none;
+
+    margin-left: 50px;
+    
+  }
+  .edit-icon {
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+    margin-left: 10px;
+    border: none;
+
+  }
+  .spanimage{
+    width: 50px;
+    height: auto;
+  }
