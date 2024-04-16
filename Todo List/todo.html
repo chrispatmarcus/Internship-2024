@@ -61,9 +61,8 @@ function addTodo(){
     renderTodoList();
     addNumberOfTask();
 }
-function deleteTodo(indexDelete){ //delete function
-  todoList.splice(indexDelete-1, 1);
-}
+//function deleteTodo(indexDelete){ //delete function
+  //todoList.splice(indexDelete-1, 1);}
 
 function renderTodoList(){
     let todoListHtml = '';
@@ -72,7 +71,7 @@ function renderTodoList(){
         const todo = todoList[i];
         const html= `<div class="list">
                   <span class="todoname">${todo}</span>
-                  <button onclick="deleteTodo()"class="delete-icon"><img class="spanimage" src="icons8-delete-30.png" alt="Image"></button>
+                  <button onclick="todoList.splice(${i}, 1);renderTodoList();"class="delete-icon"><img class="spanimage" src="icons8-delete-30.png" alt="Image"></button>
                   <button class="edit-icon"><img class="spanimage" src="icons8-edit-24.png" alt="Image"></button>
                 </div>`;
         todoListHtml +=html;
