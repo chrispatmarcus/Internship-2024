@@ -22,9 +22,13 @@
     font-size: 50px;
 }
 .logo{
-    width: 120px;
+    width: 200px;
     cursor: pointer;
     margin-left: 10px;
+}
+.numberOfTask{
+  color: #51e5ff;
+  width: 200px;
 }
 .logo p{
     color:#51e5ff ;
